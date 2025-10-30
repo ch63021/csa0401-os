@@ -1,0 +1,17 @@
+Start
+    Input number of frames
+    Input reference string
+    Initialize empty list for frames
+    page_faults = 0
+    For each page in reference string:
+        If page in frame:
+            Move page to most recent position
+        Else:
+            If frames not full:
+                Add page
+            Else:
+                Remove least recently used page
+                Add new page
+            Increment page_faults
+    Display total page faults
+Stop
