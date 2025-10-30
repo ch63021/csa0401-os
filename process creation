@@ -1,0 +1,11 @@
+Start
+    Call fork()
+    If fork() returns < 0:
+        Print "Process creation failed"
+    Else if fork() returns 0:
+        Print "This is the Child Process"
+        Print "Child Process ID"
+    Else:
+        Print "This is the Parent Process"
+        Print "Parent Process ID"
+Stop
