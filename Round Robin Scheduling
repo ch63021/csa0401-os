@@ -1,0 +1,20 @@
+Start
+    Input number of processes n
+    Input Burst Time (BT[i]) for each process
+    Input Time Quantum (Q)
+    Initialize remaining time = BT[i]
+    time = 0
+    While (any process still incomplete)
+        For each process i:
+            If remaining time > 0:
+                If remaining time > Q:
+                    time = time + Q
+                    remaining time = remaining time - Q
+                Else:
+                    time = time + remaining time
+                    Turnaround Time (TAT[i]) = time
+                    Waiting Time (WT[i]) = TAT[i] - BT[i]
+                    remaining time = 0
+    Calculate Average WT and TAT
+    Display all results
+Stop
