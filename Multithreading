@@ -1,0 +1,8 @@
+Start
+    Define function task()
+        Print "Thread is running"
+    Create two threads t1 and t2 for task()
+    Start t1 and t2
+    Wait for both threads to finish
+    Print "Main thread completed"
+Stop
