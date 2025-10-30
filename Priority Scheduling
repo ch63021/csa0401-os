@@ -1,0 +1,14 @@
+Start
+    Input number of processes n
+    For each process i:
+        Input Burst Time (BT[i]) and Priority (PR[i])
+    Sort processes by Priority (lower value = higher priority)
+    Calculate Waiting Time (WT)
+        WT[0] = 0
+        For i = 1 to n-1:
+            WT[i] = WT[i-1] + BT[i-1]
+    Calculate Turnaround Time (TAT)
+        For i = 0 to n-1:
+            TAT[i] = WT[i] + BT[i]
+    Display all results and averages
+Stop
