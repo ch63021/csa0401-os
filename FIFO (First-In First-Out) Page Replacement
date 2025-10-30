@@ -1,0 +1,15 @@
+Start
+    Input number of frames
+    Input reference string
+    Initialize empty queue (frame list)
+    page_faults = 0
+    For each page in reference string:
+        If page is not in frames:
+            If frames not full:
+                Add page to frame
+            Else:
+                Remove first page from queue
+                Add new page
+            Increment page_faults
+    Display total page faults
+Stop
