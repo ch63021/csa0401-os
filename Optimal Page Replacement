@@ -1,0 +1,16 @@
+Start
+    Input number of frames
+    Input reference string
+    page_faults = 0
+    For each page in reference string:
+        If page not in frames:
+            If frames not full:
+                Add page
+            Else:
+                For each page in frame:
+                    Find the page that will not be used for longest time
+                Replace that page
+            Increment page_faults
+    Display total page faults
+Stop
+
