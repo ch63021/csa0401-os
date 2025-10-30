@@ -1,0 +1,11 @@
+Start
+    Create a pipe
+    Call fork() to create child process
+    If in child process:
+        Close read end of pipe
+        Write message into pipe
+    Else (Parent Process):
+        Close write end of pipe
+        Read message from pipe
+        Print received message
+Stop
