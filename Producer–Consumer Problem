@@ -1,0 +1,17 @@
+Start
+    Initialize empty = n, full = 0, mutex = 1
+    Repeat forever:
+        Producer:
+            Wait(empty)
+            Wait(mutex)
+            Produce an item and add to buffer
+            Signal(mutex)
+            Signal(full)
+
+        Consumer:
+            Wait(full)
+            Wait(mutex)
+            Remove item from buffer and consume
+            Signal(mutex)
+            Signal(empty)
+Stop
