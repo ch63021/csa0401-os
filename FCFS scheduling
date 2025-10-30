@@ -1,0 +1,14 @@
+Start
+    Input number of processes n
+    For each process i in 1 to n:
+        Input Burst Time (BT[i])
+    Calculate Waiting Time (WT)
+        WT[0] = 0
+        For i = 1 to n-1:
+            WT[i] = WT[i-1] + BT[i-1]
+    Calculate Turnaround Time (TAT)
+        For i = 0 to n-1:
+            TAT[i] = WT[i] + BT[i]
+    Calculate Average WT and Average TAT
+    Display all results
+Stop
