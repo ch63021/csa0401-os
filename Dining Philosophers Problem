@@ -1,0 +1,10 @@
+Start
+    Initialize Semaphore chopstick[5] = 1
+    For each philosopher i:
+        Wait(chopstick[i])
+        Wait(chopstick[(i+1) % 5])
+        Eat
+        Signal(chopstick[i])
+        Signal(chopstick[(i+1) % 5])
+        Think
+Stop
