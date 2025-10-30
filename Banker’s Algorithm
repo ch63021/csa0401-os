@@ -1,0 +1,16 @@
+Start
+    Input number of processes n and resources m
+    Input Allocation[n][m] and Max[n][m]
+    Calculate Need[n][m] = Max - Allocation
+    Input Available[m]
+    Initialize Finish[i] = False
+    While exists process i with Need[i] <= Available and Finish[i] == False:
+        Allocate its resources temporarily
+        Available = Available + Allocation[i]
+        Finish[i] = True
+        Add process to safe sequence
+    If all Finish[i] == True:
+        System is in Safe State
+    Else:
+        Deadlock possible
+Stop
