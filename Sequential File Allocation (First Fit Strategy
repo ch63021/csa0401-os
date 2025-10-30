@@ -1,0 +1,11 @@
+Start
+    Input number of blocks and files
+    For each file:
+        Input file size
+        For each block:
+            If block is free and can store file:
+                Allocate block sequence to file
+                Mark blocks as occupied
+                Break
+    Display file allocation table
+Stop
