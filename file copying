@@ -1,0 +1,11 @@
+Start
+    Input source file name
+    Input destination file name
+    Open source file in read mode
+    Open destination file in write mode
+    While not end of source file:
+        Read a character from source
+        Write the character to destination
+    Close both files
+    Print "File copied successfully"
+Stop
